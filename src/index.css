@@ -304,20 +304,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 0.2em;
 }
 .navbar-ul li {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 .navbar-ul li a {
   color: var(--black);
-  padding: 1em;
+  padding: 0.7em;
   color: white;
 }
 
+@media (min-width: 355px) {
+  .navbar-ul li {
+    font-size: 1rem;
+  }
+
+  .navbar-ul li a {
+    padding: 1em;
+  }
+}
+
 @media (min-width: 768px) {
+  .navbar-ul {
+    gap: 3em;
+  }
+
   .navbar-ul li {
     font-size: 1.2rem;
   }
@@ -335,8 +349,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
+  text-align: center; /*toto*/
+  padding: 2rem;
 }
+
 .img-container {
   display: none;
 }
@@ -345,8 +361,8 @@ body {
   max-width: var(--max-width);
 }
 .hero-title h1 {
-  margin-bottom: 2rem;
-  font-weight: 700;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .hero-title h4 {
@@ -355,13 +371,13 @@ body {
 
 .hero-title p {
   line-height: 2;
-  max-width: 35em;
   color: var(--grey-600);
 }
 
 .icons-div {
   padding-top: 1em;
   display: flex;
+  justify-content: center; /*toto*/
   gap: 0.5em;
 }
 
@@ -386,14 +402,28 @@ body {
 }
 
 @media (min-width: 992px) {
+  .hero {
+    padding: 5rem;
+    text-align: left;
+  }
+
   .hero-center {
     display: grid;
     grid-template-columns: 2fr 1fr;
     place-items: center;
     gap: 8rem;
   }
+
+  .hero-title h1 {
+    margin-bottom: 2rem;
+  }
+
   .img-container {
     display: block;
+  }
+
+  .icons-div {
+    justify-content: flex-start;
   }
 
   .btn-div button {
@@ -410,7 +440,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
+  padding: 2em;
 }
 
 .about-center {
@@ -426,6 +456,12 @@ body {
   color: white;
 }
 
+@media (min-width: 992px) {
+  .about-section {
+    padding: 5rem;
+  }
+}
+
 /* TECHNOLOGIES */
 
 .tech-section {
@@ -434,8 +470,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
-  padding-top: 7em;
+  padding: 2em;
 }
 
 .tech-center {
@@ -448,8 +483,8 @@ body {
 }
 
 .tech-div {
-  padding-top: 10em;
-  padding-bottom: 4em;
+  margin-top: 5em;
+  margin-bottom: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -485,7 +520,14 @@ body {
 }
 
 @media (min-width: 768px) {
+  .tech-section {
+    padding: 5rem;
+    padding-top: 7em;
+  }
+
   .tech-div {
+    padding-top: 10em;
+    padding-bottom: 4em;
     grid-template-columns: repeat(3, 1fr);
     gap: 7rem;
   }
