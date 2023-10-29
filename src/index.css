@@ -377,12 +377,12 @@ body {
 .icons-div {
   padding-top: 1em;
   display: flex;
-  justify-content: center; /*toto*/
+  justify-content: center;
   gap: 0.5em;
 }
 
 .icon {
-  color: var(--primary-300);
+  color: var(--black);
   font-size: 2rem;
   transition: var(--transition);
 }
@@ -554,7 +554,7 @@ PROJECTS
 */
 
 .projects {
-  padding: 7em 2em 7em 2em;
+  padding: 7em 0em;
   background: var(--primary-300);
 }
 .projects-center {
