@@ -15,15 +15,15 @@ html {
 
 :root {
   /* colors */
-  --primary-100: #e2e0ff;
-  --primary-200: #c1beff;
-  --primary-300: #a29dff;
-  --primary-400: #837dff;
-  --primary-500: #645cff;
-  --primary-600: #504acc;
-  --primary-700: #3c3799;
-  --primary-800: #282566;
-  --primary-900: #141233;
+  --primary-100: #3668dd;
+  --primary-200: #315ec7;
+  --primary-300: #2b53b1;
+  --primary-400: #26499b;
+  --primary-500: #203e85;
+  --primary-600: #1b346f;
+  --primary-700: #162a58;
+  --primary-800: #9bb4ee;
+  --primary-900: #c3d2f5;
 
   /* grey */
   --grey-50: #f8fafc;
@@ -276,7 +276,7 @@ ul {
 }
 
 .title-underline {
-  background: var(--primary-700);
+  background: var(--primary-800);
   width: 4rem;
   height: 0.25rem;
   margin: 0 auto;
@@ -350,7 +350,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center; /*toto*/
-  padding: 2rem;
+  padding: 7em 2em 7em 2em;
 }
 
 .img-container {
@@ -366,7 +366,7 @@ body {
 }
 
 .hero-title h4 {
-  color: var(--primary-500);
+  color: var(--primary-100);
 }
 
 .hero-title p {
@@ -382,7 +382,7 @@ body {
 }
 
 .icon {
-  color: black;
+  color: var(--primary-300);
   font-size: 2rem;
   transition: var(--transition);
 }
@@ -398,12 +398,12 @@ body {
 .btn-div a {
   padding: 0.8em 1.6em;
   font-size: 1.2rem;
-  background: var(--primary-500);
+  background: var(--primary-100);
 }
 
 @media (min-width: 992px) {
   .hero {
-    padding: 5rem;
+    padding: 9em 2em 9em 2em;
     text-align: left;
   }
 
@@ -440,7 +440,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2em;
+  padding: 7em 2em 7em 2em;
 }
 
 .about-center {
@@ -456,12 +456,6 @@ body {
   color: white;
 }
 
-@media (min-width: 992px) {
-  .about-section {
-    padding: 5rem;
-  }
-}
-
 /* TECHNOLOGIES */
 
 .tech-section {
@@ -470,7 +464,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2em;
+  padding: 7em 2em 7em 2em;
 }
 
 .tech-center {
@@ -520,14 +514,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .tech-section {
-    padding: 5rem;
-    padding-top: 7em;
-  }
-
   .tech-div {
-    padding-top: 10em;
-    padding-bottom: 4em;
     grid-template-columns: repeat(3, 1fr);
     gap: 7rem;
   }
@@ -567,7 +554,7 @@ PROJECTS
 */
 
 .projects {
-  padding: 5rem 0;
+  padding: 7em 2em 7em 2em;
   background: var(--primary-300);
 }
 .projects-center {
@@ -597,17 +584,25 @@ PROJECTS
 }
 
 .project-header-div {
-  background: var(--primary-100);
+  background: var(--primary-600);
 }
 
 .project h5 {
   text-align: center;
   padding: 1rem 0;
-  color: var(--primary-800);
+  color: var(--white);
 }
 
 .project-div {
   padding: 1em;
+  background: var(--primary-600);
+}
+
+.project-div h6 {
+  color: white;
+}
+.project-div p {
+  color: white;
 }
 
 .build-with-div {
